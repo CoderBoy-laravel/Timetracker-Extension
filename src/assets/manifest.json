@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "TechspotDEV TimeTracker",
+  "version": "1.0.0",
+  "description": "TechspotDEV TimeTracker Extension",
+  "author": "Monirul Islam",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "24": "icon.png",
+      "32": "icon.png"
+    },
+    "default_title": "TechspotDEV TimeTracker",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
