@@ -1,0 +1,87 @@
+.m-auto {
+  margin: auto;
+}
+.pt-5 {
+  padding-top: 20px;
+}
+.pb-3 {
+  padding-bottom: 13px;
+}
+.p-3 {
+  padding: 10px;
+}
+.w-full {
+  width: 100%;
+}
+.w-93 {
+  width: 93%;
+}
+.text-center {
+  text-align: center;
+}
+.block {
+  display: block;
+}
+.font-bold {
+  font-weight: 600;
+}
+.text-base {
+  font-size: small;
+}
+.switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 60px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 3px;
+  content: "";
+  height: 15px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 15px;
+}
+
+input:checked + .slider {
+  background-color: #1637c9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(37px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.question-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question p {
+  text-transform: capitalize;
+  font-weight: 600;
+}

@@ -17,7 +17,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader"],
         test: /\.css$/i,
       },
       {
@@ -26,6 +26,11 @@ module.exports = {
       },
     ],
   },
+  watchOptions: {
+    ignored: "**/node_modules",
+    poll: 5000,
+  },
+
   plugins: [
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false,
